@@ -203,5 +203,5 @@ const route = useRoute();
 const slug = route.params.slug;
 
 // Get selected project
-// const project = computed(() => allProjects.find((p) => p.slug === slug));
+const project = computed(() => allProjects.find((p) => p.slug === slug));
 </script>

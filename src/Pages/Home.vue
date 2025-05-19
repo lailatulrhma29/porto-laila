@@ -81,7 +81,7 @@ const projects = [
   },
 
   {
-    title: "Admin Panel",
+    title: "Parcel Tracking UI",
     subtitle: "Full CRUD dashboard for system administrators.",
     image: home,
     slug: "admin-panel",
