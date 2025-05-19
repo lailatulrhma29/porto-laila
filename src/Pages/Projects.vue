@@ -31,13 +31,19 @@ import dashboard from '@/assets/AQMS/dashboardaqms.png'
 import rentspace from '@/assets/rentspace/SS4.png'
 import home from '@/assets/shopee/home.png'
 import landingpage from '@/assets/eduwork/landingpage.png'
-
+import adminhomescola1 from '@/assets/scola/adminhomescola1.jpg'
 const projects = [
   {
     slug: 'aqms',
     title: 'AQMS Dashboard',
     subtitle: 'Real-time air quality monitoring system.',
     image: dashboard
+  },
+    {
+    slug: 'scola',
+    title: 'School Management System',
+    subtitle: 'Full CRUD dashboard for system administrators.',
+    image: adminhomescola1
   },
   {
     slug: 'rent-space',

@@ -103,6 +103,7 @@ import rentspace1 from "@/assets/rentspace/SS5.png";
 import SS1 from "@/assets/rentspace/SS1.png";
 import SS2 from "@/assets/rentspace/SS2.png";
 import SS3 from "@/assets/rentspace/SS3.png";
+import adminhomescola1 from "@/assets/scola/adminhomescola1.jpg";
 import { ref } from "vue";
 
 // active image index
@@ -137,6 +138,25 @@ const allProjects = [
     ],
   },
   {
+    slug: "scola",
+    title: "School Management System",
+    subtitle: "Full CRUD dashboard for school administration.",
+    images: [adminhomescola1],
+    imageCaptions: ["Main dashboard showing school activity summary"],
+    description:
+      "A comprehensive school management system designed to help administrators manage academics, attendance, payments, reports, and more. The system provides real-time data monitoring, role-based access, and a clean interface for daily operations in schools.",
+    tools: "Odoo, Vue.js, PostgreSQL, JSON-RPC, Tailwind CSS",
+    highlights: [
+      "📊 Dashboard: Real-time metrics and quick summaries",
+      "📚 Manajemen Akademik: Mata Pelajaran, Topik, Jam Pelajaran, Sesi & Batch",
+      "👨‍🏫 Guru & Kelas: Kelas, Daftar Guru, Penugasan, Kehadiran Staff",
+      "👩‍🎓 Siswa & Orang Tua: Data Siswa, Kehadiran, Orang Tua, User",
+      "🏫 Administrasi Sekolah: Perpustakaan, Kalender, Pembayaran, Berita, PPDB",
+      "📝 Penilaian & Akademik: Ujian & E-Raport digital",
+      "💬 Konseling: Prestasi dan pencatatan pelanggaran siswa",
+    ],
+  },
+  {
     slug: "admin-panel",
     title: "Parcel Tracking UI",
     subtitle: "Clean and responsive design for shipment tracking.",
@@ -154,23 +174,25 @@ const allProjects = [
       "User-friendly tracking input and visual feedback",
     ],
   },
- {
-  slug: "landing-page",
-  title: "Eduwork Landing Page Design",
-  subtitle: "Marketing homepage for a career platform.",
-  images: [landingpage],
-  imageCaptions: ["Homepage UI with hero CTA, partner logos, and program overview"],
-  description:
-    "A UI-only concept for Eduwork’s official homepage. Designed to promote career bootcamps, job placement services, and digital learning programs. This landing page focuses on conversion elements like CTAs, testimonials, and course highlights—crafted to ensure clarity and strong visual hierarchy.",
-  tools: "Figma, Tailwind UI Style Guide, Scroll Animation",
-  highlights: [
-    "Hero section with dual CTA (Daftar & Konsultasi)",
-    "Partner trust section with logos (Tokopedia, Astra, etc.)",
-    "Program showcase & user testimonials",
-    "Modern layout with responsive sections",
-    "Scroll-triggered animations and section reveals",
-  ],
-},
+  {
+    slug: "landing-page",
+    title: "Eduwork Landing Page Design",
+    subtitle: "Marketing homepage for a career platform.",
+    images: [landingpage],
+    imageCaptions: [
+      "Homepage UI with hero CTA, partner logos, and program overview",
+    ],
+    description:
+      "A UI-only concept for Eduwork’s official homepage. Designed to promote career bootcamps, job placement services, and digital learning programs. This landing page focuses on conversion elements like CTAs, testimonials, and course highlights—crafted to ensure clarity and strong visual hierarchy.",
+    tools: "Figma, Tailwind UI Style Guide, Scroll Animation",
+    highlights: [
+      "Hero section with dual CTA (Daftar & Konsultasi)",
+      "Partner trust section with logos (Tokopedia, Astra, etc.)",
+      "Program showcase & user testimonials",
+      "Modern layout with responsive sections",
+      "Scroll-triggered animations and section reveals",
+    ],
+  },
   {
     slug: "rent-space",
     title: "Rent Space App",

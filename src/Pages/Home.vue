@@ -4,9 +4,7 @@
     <div class="max-w-3xl mx-auto">
       <h1 class="text-5xl md:text-6xl font-light leading-tight">
         Hi, I'm
-        <span class="bg-yellow-200 px-2 font-bold text-black"
-          >Laila</span
-        >
+        <span class="bg-yellow-200 px-2 font-bold text-black">Laila</span>
       </h1>
 
       <h2 class="mt-6 text-4xl md:text-5xl font-extrabold leading-tight">
@@ -62,10 +60,8 @@ import { useRouter } from "vue-router";
 
 // Import image thumbnails
 import dashboardaqms from "@/assets/AQMS/dashboardaqms.png";
-import datahistory from "@/assets/AQMS/datahistory.png";
-import maintenance from "@/assets/AQMS/maintenance.png";
+import adminhomescola1 from "@/assets/scola/adminhomescola1.jpg";
 import home from "@/assets/shopee/home.png";
-import track from "@/assets/shopee/track.png";
 import rentspace from "@/assets/rentspace/SS2.png";
 import landingpage1 from "@/assets/eduwork/landingpage1.jpeg";
 
@@ -79,7 +75,13 @@ const projects = [
     slug: "aqms",
     bg: "bg-[#d9eafe]",
   },
-
+  {
+    title: "School Management System",
+    subtitle: "Full CRUD dashboard for system administrators.",
+    image: adminhomescola1,
+    slug: "scola",
+    bg: "bg-[#e4d9fb]",
+  },
   {
     title: "Parcel Tracking UI",
     subtitle: "Full CRUD dashboard for system administrators.",
