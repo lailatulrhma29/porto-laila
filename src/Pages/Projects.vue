@@ -27,41 +27,41 @@
 </template>
 
 <script setup>
-import dashboard from '@/assets/AQMS/dashboardaqms.png'
-import rentspace from '@/assets/rentspace/SS4.png'
-import home from '@/assets/shopee/home.png'
-import landingpage from '@/assets/eduwork/landingpage.png'
-import adminhomescola1 from '@/assets/scola/adminhomescola1.jpg'
+import dashboard from "@/assets/AQMS/dashboardaqms.png";
+import rentspace from "@/assets/rentspace/SS4.png";
+import home from "@/assets/shopee/home.png";
+import landingpage from "@/assets/eduwork/landingpage.png";
+import adminhomescola1 from "@/assets/scola/adminhomescola1.jpg";
 const projects = [
   {
-    slug: 'aqms',
-    title: 'AQMS Dashboard',
-    subtitle: 'Real-time air quality monitoring system.',
-    image: dashboard
-  },
-    {
-    slug: 'scola',
-    title: 'School Management System',
-    subtitle: 'Full CRUD dashboard for system administrators.',
-    image: adminhomescola1
+    slug: "aqms",
+    title: "AQMS Dashboard",
+    subtitle: "Real-time air quality monitoring system.",
+    image: dashboard,
   },
   {
-    slug: 'rent-space',
-    title: 'Rent Space App',
-    subtitle: 'Coworking booking app with React & Laravel backend.',
-    image: rentspace
+    slug: "scola",
+    title: "School Management System",
+    subtitle: "Full CRUD dashboard for system administrators.",
+    image: adminhomescola1,
   },
   {
-    slug: 'tracking-ui',
-    title: 'Parcel Tracking UI',
-    subtitle: 'Design concept for real-time shipment tracking.',
-    image: home
+    slug: "rent-space",
+    title: "Rent Space App",
+    subtitle: "Coworking booking app with React & Laravel backend.",
+    image: rentspace,
   },
   {
-    slug: 'landing-page',
-    title: 'Eduwork Landing Page',
-    subtitle: 'UI design for digital bootcamp platform homepage.',
-    image: landingpage
-  }
-]
+    slug: "tracking-ui",
+    title: "Parcel Tracking UI",
+    subtitle: "Modern interface for tracking parcel deliveries.",
+    image: home,
+  },
+  {
+    slug: "landing-page",
+    title: "Eduwork Landing Page",
+    subtitle: "UI design for digital bootcamp platform homepage.",
+    image: landingpage,
+  },
+];
 </script>

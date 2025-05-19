@@ -8,12 +8,11 @@
       </h1>
 
       <h2 class="mt-6 text-4xl md:text-5xl font-extrabold leading-tight">
-                <span class="text-black">I</span>
+        <span class="text-black">I</span>
 
         <span class="text-transparent outline-text"> code, design, </span>
         <span class="text-black">& </span>
-                <span class="text-transparent outline-text"> write </span>
-
+        <span class="text-transparent outline-text"> write </span>
       </h2>
 
       <p class="mt-6 text-gray-700 text-lg md:text-xl">
@@ -66,7 +65,7 @@ import { useRouter } from "vue-router";
 import dashboardaqms from "@/assets/AQMS/dashboardaqms.png";
 import adminhomescola1 from "@/assets/scola/adminhomescola1.jpg";
 import home from "@/assets/shopee/home.png";
-import rentspace from "@/assets/rentspace/SS2.png";
+import rentspace from "@/assets/rentspace/SS3.png";
 import landingpage1 from "@/assets/eduwork/landingpage1.jpeg";
 
 const router = useRouter();
@@ -88,7 +87,7 @@ const projects = [
   },
   {
     title: "Parcel Tracking UI",
-    subtitle: "Full CRUD dashboard for system administrators.",
+    subtitle: "Modern interface for tracking parcel deliveries.",
     image: home,
     slug: "admin-panel",
     bg: "bg-[#fff6e5]",
@@ -102,7 +101,8 @@ const projects = [
   // },
   {
     title: "Rent Space App",
-    subtitle: "Mobile-first web app for space rentals.",
+    subtitle:
+      "A web platform for browsing, booking, and managing shared workspaces.",
     image: rentspace,
     slug: "rent-space",
     bg: "bg-green-50",
