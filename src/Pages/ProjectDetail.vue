@@ -104,6 +104,7 @@ import SS1 from "@/assets/rentspace/SS1.png";
 import SS2 from "@/assets/rentspace/SS2.png";
 import SS3 from "@/assets/rentspace/SS3.png";
 import adminhomescola1 from "@/assets/scola/adminhomescola1.jpg";
+import aqms2 from "@/assets/aqms2/aqms2.jpg";
 import { ref } from "vue";
 
 // active image index
@@ -216,6 +217,28 @@ const allProjects = [
       "Implements SMS & WhatsApp notifications using Twilio",
       "Responsive design & map integration via Google Maps API",
       "Followed SOLID principles and clean project structure",
+    ],
+  },
+  {
+    slug: "aqms-wqms",
+    title: "AQMS & WQMS Dashboard",
+    subtitle:
+      "User interface for environmental monitoring in IoT applications.",
+    images: [aqms2],
+    imageCaptions: [
+      "Dashboard view displaying air quality and water level metrics with charts",
+    ],
+    description:
+      "Developed as part of a Master's-level IoT project, this dashboard presents a clean and responsive UI for monitoring environmental metrics. It visualizes real-time data from an Arduino-powered sensor network, including PM2.5, CO2, humidity, temperature, sunlight intensity, and water level. The system uses Firebase as the backend to store and stream sensor data, while the frontend is built in React for a fast, modular interface.",
+    tools:
+      "React JS, Firebase Realtime Database, Chart.js, Tailwind CSS, Arduino, Vite",
+    highlights: [
+      "Live data fetching and syncing via Firebase Realtime Database",
+      "Responsive dashboard UI built with React and Tailwind",
+      "Charts rendered with Chart.js to monitor key IoT sensor values",
+      "Categorized air quality conditions based on lux values",
+      "Water level visualized with pie chart for clarity",
+      "Arduino microcontroller for real-time data transmission",
     ],
   },
 ];

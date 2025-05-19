@@ -67,6 +67,7 @@ import adminhomescola1 from "@/assets/scola/adminhomescola1.jpg";
 import home from "@/assets/shopee/home.png";
 import rentspace from "@/assets/rentspace/SS3.png";
 import landingpage1 from "@/assets/eduwork/landingpage1.jpeg";
+import aqmswqmsDashboard from "@/assets/aqms2/aqms2.jpg";
 
 const router = useRouter();
 
@@ -106,6 +107,22 @@ const projects = [
     image: rentspace,
     slug: "rent-space",
     bg: "bg-green-50",
+  },
+  {
+    slug: "aqms-wqms",
+    title: "AQMS & WQMS Dashboard UI",
+    subtitle:
+      "User interface for environmental monitoring in IoT applications.",
+    image: aqmswqmsDashboard, // <- make sure you imported the correct image
+    bg: "bg-blue-50", // or a soft gray/blue tone matching the UI
+    description:
+      "A simple dashboard interface designed to monitor both Air and Water Quality data in real-time. Built for an IoT course project using Vue.js and Chart.js, the system visualizes sensor input like PM2.5, CO2, humidity, and water level. It was built in one week with a focus on clarity and minimalism.",
+    tools: "Vue.js, Chart.js, Tailwind CSS",
+    highlights: [
+      "Realtime charts for air pollutants and climate metrics",
+      "Dynamic pie chart for water level",
+      "Responsive layout for monitoring dashboards",
+    ],
   },
   {
     title: "Eduwork",

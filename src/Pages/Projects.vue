@@ -32,6 +32,7 @@ import rentspace from "@/assets/rentspace/SS4.png";
 import home from "@/assets/shopee/home.png";
 import landingpage from "@/assets/eduwork/landingpage.png";
 import adminhomescola1 from "@/assets/scola/adminhomescola1.jpg";
+import aqms2 from "@/assets/aqms2/aqms2.jpg";
 const projects = [
   {
     slug: "aqms",
@@ -50,6 +51,13 @@ const projects = [
     title: "Rent Space App",
     subtitle: "Coworking booking app with React & Laravel backend.",
     image: rentspace,
+  },
+  {
+    slug: "aqms-wqms",
+    title: "AQMS & WQMS Dashboard",
+    subtitle:
+      "User interface for environmental monitoring in IoT applications.",
+    image: aqms2,
   },
   {
     slug: "tracking-ui",
