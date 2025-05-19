@@ -9,8 +9,6 @@
 </template>
 
 <script setup>
-// import Home from './components/Hero.vue';
-import Projects from './components/Project.vue';
-import Footer from './components/Footer.vue';
-import Navbar from './components/Navbar.vue';
+import Footer from '@/components/Footer.vue';
+import Navbar from '@/components/Navbar.vue';
 </script>
