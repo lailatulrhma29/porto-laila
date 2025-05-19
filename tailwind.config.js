@@ -5,9 +5,11 @@ export default {
     "./src/**/*.{vue,js,ts}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        grotesk: ['"Space Grotesk"', 'sans-serif'],
+      },
+    },
   },
-  plugins: [
-    
-  ],
+  plugins: [],
 }

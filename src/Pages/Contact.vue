@@ -1,19 +1,85 @@
 <template>
-  <section class="min-h-screen px-6 py-16 bg-gray-50 text-gray-800">
-    <div class="max-w-xl mx-auto text-center">
-      <h1 class="text-3xl font-bold mb-4">Contact Me</h1>
-      <p class="text-gray-600 mb-6">I’d love to connect with you! Feel free to reach out via any channel below.</p>
+  <section class="min-h-screen  from-gray-50 to-white py-20 px-6 text-gray-800">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+      
+      <!-- Contact Info -->
+      <div>
+        <h1 class="text-4xl font-bold mb-4">Let's Connect</h1>
+        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+          Whether you're curious about my work, looking to collaborate, or just want to say hi —
+          I’d love to hear from you! ✨
+        </p>
 
-      <div class="space-y-4 text-left text-base">
-        <p>📞 <strong>Phone:</strong> 0812-4934-2514</p>
-        <p>✉️ <strong>Email:</strong> <a href="mailto:lailatulrhma@gmail.com" class="text-blue-600 underline">lailatulrhma@gmail.com</a></p>
-        <p>🔗 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/lailatulrhma" class="text-blue-600 underline" target="_blank">linkedin.com/in/lailatulrhma</a></p>
-        <p>📍 <strong>Address:</strong> Srengseng, West Jakarta</p>
+        <ul class="space-y-6 text-base">
+          <li class="flex items-start gap-4">
+            <span class="text-2xl">📞</span>
+            <div>
+              <p class="font-semibold">Phone</p>
+              <a href="tel:081249342514" class="text-blue-600 hover:underline">0812-4934-2514</a>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-4">
+            <span class="text-2xl">✉️</span>
+            <div>
+              <p class="font-semibold">Email</p>
+              <a href="mailto:lailatulrhma@gmail.com" class="text-blue-600 hover:underline">lailatulrhma@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-4">
+            <span class="text-2xl">🔗</span>
+            <div>
+              <p class="font-semibold">LinkedIn</p>
+              <a
+                href="https://linkedin.com/in/lailatulrhma"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+              >
+                linkedin.com/in/lailatulrhma
+              </a>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-4">
+            <span class="text-2xl">📍</span>
+            <div>
+              <p class="font-semibold">Address</p>
+              <p>Srengseng, West Jakarta</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Photo & Social -->
+      <div class="flex flex-col items-center text-center">
+        <!-- <img
+          src="@/assets/fotolaila.png"
+          alt="Lailatul Rohma"
+          class="w-52 h-52 object-cover rounded-full shadow-lg mb-6 ring-4 ring-blue-200"
+        /> -->
+        <p class="font-semibold text-xl">Lailatul Rohma</p>
+        <p class="text-gray-500 text-sm mb-4">Frontend-Focused Fullstack Developer</p>
+
+        <div class="flex gap-4 justify-center mt-2">
+          <a
+            href="mailto:lailatulrhma@gmail.com"
+            class="bg-blue-100 text-blue-600 px-3 py-1.5 rounded-full text-sm font-medium hover:bg-blue-200 transition"
+          >
+            Say Hello
+          </a>
+          <a
+            href="https://linkedin.com/in/lailatulrhma"
+            target="_blank"
+            class="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full text-sm font-medium hover:bg-gray-200 transition"
+          >
+            View LinkedIn
+          </a>
+        </div>
       </div>
     </div>
   </section>
 </template>
-
 <script setup>
 // No script required
 </script>

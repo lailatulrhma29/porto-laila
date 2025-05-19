@@ -8,8 +8,12 @@
       </h1>
 
       <h2 class="mt-6 text-4xl md:text-5xl font-extrabold leading-tight">
-        <span class="text-transparent outline-text">I code, design, </span>
-        <span class="text-black">& write.</span>
+                <span class="text-black">I</span>
+
+        <span class="text-transparent outline-text"> code, design, </span>
+        <span class="text-black">& </span>
+                <span class="text-transparent outline-text"> write </span>
+
       </h2>
 
       <p class="mt-6 text-gray-700 text-lg md:text-xl">
