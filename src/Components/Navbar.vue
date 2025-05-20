@@ -1,35 +1,39 @@
 <template>
-  <nav class="sticky top-0 z-50 bg-white dark:bg-gray-900 px-4 py-2">
-    <div class="max-w-5xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-grotesk text-black dark:text-white">L A I L A</h1>
-
-    
+  <nav
+    class="fixed w-full top-0 z-50 backdrop-blur-md bg-white/60 dark:bg-gray-900/70 border-b border-gray-200 dark:border-gray-800 shadow-sm"
+  >
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap justify-between items-center">
+      <!-- Logo -->
+      <h1 class="text-xl font-grotesk font-semibold tracking-wider text-black dark:text-white">
+        Lailatlrhma
+      </h1>
 
       <!-- Navigation Links -->
-      <ul class="flex gap-6 text-sm font-medium">
+      <ul class="flex flex-wrap gap-6 text-sm font-medium items-center">
         <li>
-          <router-link to="/" class="hover:underline font-grotesk text-black dark:text-white">
+          <router-link to="/" class="hover:underline text-black dark:text-white">
             Home
           </router-link>
         </li>
         <li>
-          <router-link to="/projects" class="hover:underline font-grotesk text-black dark:text-white">
+          <router-link to="/projects" class="hover:underline text-black dark:text-white">
             Projects
           </router-link>
         </li>
         <li>
-          <router-link to="/about" class="hover:underline font-grotesk text-black dark:text-white">
+          <router-link to="/about" class="hover:underline text-black dark:text-white">
             About
           </router-link>
         </li>
         <li>
-          <router-link to="/contact" class="hover:underline font-grotesk text-black dark:text-white">
+          <router-link to="/contact" class="hover:underline text-black dark:text-white">
             Contact
           </router-link>
         </li>
       </ul>
-        <!-- Toggle Switch -->
-      <label class="flex items-center cursor-pointer">
+
+      <!-- Theme Toggle Switch -->
+      <label class="flex items-center gap-2 cursor-pointer ml-4">
         <div class="relative">
           <input
             type="checkbox"
@@ -38,14 +42,14 @@
             @change="$emit('toggle-theme')"
           />
           <div
-            class="w-11 h-6 bg-gray-300 peer-checked:bg-indigo-500 rounded-full transition"
+            class="w-11 h-6 bg-gray-300 dark:bg-gray-600 peer-checked:bg-indigo-500 rounded-full transition-all"
           ></div>
           <div
-            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow-md transform peer-checked:translate-x-full transition"
+            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow-md transform peer-checked:translate-x-5 transition-all"
           ></div>
         </div>
-        <span class="ml-2 text-sm text-gray-700 dark:text-gray-300 hidden sm:inline">
-          {{ isDark ? "Dark" : "Light" }}
+        <span class="text-sm text-gray-700 dark:text-gray-300 hidden sm:inline">
+          {{ isDark ? 'Dark' : 'Light' }}
         </span>
       </label>
     </div>

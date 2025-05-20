@@ -1,88 +1,104 @@
 <template>
-  <section class="px-6 py-16 bg-white max-w-5xl mx-auto text-left">
-    <div v-if="project">
-      <h1 class="text-3xl font-bold mb-2">{{ project.title }}</h1>
-      <p class="text-gray-600 mb-6 text-lg">{{ project.subtitle }}</p>
+  <section
+    class="min-h-screen px-6 py-20 bg-gradient-to-br from-[#fff9f5] via-[#f0fdf8] to-[#fefcea] dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-black dark:text-white transition-colors"
+  >
+    <div class="max-w-4xl mx-auto">
+      <div v-if="project">
+        <h1
+          class="text-4xl font-extrabold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 dark:from-indigo-400 dark:to-blue-300"
+        >
+          {{ project.title }}
+        </h1>
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
+          {{ project.subtitle }}
+        </p>
 
-      <!-- Gambar-gambar -->
-      <div class="space-y-10 mb-10">
-        <!-- Interaktif Image Viewer -->
+        <!-- Image Gallery -->
         <div v-if="images.length" class="mb-10">
-          <!-- Gambar utama -->
-          <div class="relative">
+          <div class="relative rounded-lg overflow-hidden shadow-lg">
             <img
               :src="images[activeImage]"
-              class="rounded-lg shadow w-full transition duration-300"
               :alt="`Slide ${activeImage + 1}`"
+              class="w-full h-auto object-cover transition duration-300"
             />
-            <!-- Tombol Prev -->
+            <!-- Prev -->
             <button
               @click="prevImage"
-              class="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
+              class="absolute left-3 top-1/2 -translate-y-1/2 bg-white dark:bg-gray-700 text-xl p-2 rounded-full shadow hover:bg-gray-100 dark:hover:bg-gray-600"
               v-if="images.length > 1"
             >
               ‹
             </button>
-            <!-- Tombol Next -->
+            <!-- Next -->
             <button
               @click="nextImage"
-              class="absolute right-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
+              class="absolute right-3 top-1/2 -translate-y-1/2 bg-white dark:bg-gray-700 text-xl p-2 rounded-full shadow hover:bg-gray-100 dark:hover:bg-gray-600"
               v-if="images.length > 1"
             >
               ›
             </button>
           </div>
 
-          <!-- Thumbnail bar -->
-          <div class="flex gap-3 mt-4 overflow-x-auto">
+          <!-- Thumbnails -->
+          <div class="flex gap-3 mt-4 overflow-x-auto pb-2">
             <img
               v-for="(img, i) in images"
               :key="i"
               :src="img"
               @click="activeImage = i"
-              class="h-16 rounded border cursor-pointer transition duration-200"
+              class="h-16 w-auto rounded border cursor-pointer transition duration-200"
               :class="
                 i === activeImage
-                  ? 'ring-2 ring-blue-400'
-                  : 'opacity-70 hover:opacity-100'
+                  ? 'ring-2 ring-indigo-400'
+                  : 'opacity-60 hover:opacity-100'
               "
             />
           </div>
 
-          <!-- Caption -->
-          <p class="text-sm text-gray-500 mt-2">
+          <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
             {{
               project.imageCaptions?.[activeImage] ??
               `Preview ${activeImage + 1}`
             }}
           </p>
         </div>
-      </div>
 
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        {{ project.description }}
-      </p>
+        <!-- Description -->
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+          {{ project.description }}
+        </p>
 
-      <div class="mt-10 text-sm text-gray-500">
-        <strong>Tools:</strong> {{ project.tools }}
-      </div>
+        <!-- Tools -->
+        <div class="text-sm mb-6">
+          <strong class="text-gray-800 dark:text-gray-200">Tools:</strong>
+          <span class="text-gray-600 dark:text-gray-400">{{
+            project.tools
+          }}</span>
+        </div>
 
-      <ul class="list-disc mt-6 ml-6 text-gray-700 text-sm space-y-1">
-        <li v-for="(point, index) in project.highlights" :key="index">
-          {{ point }}
-        </li>
-      </ul>
-
-      <!-- CTA -->
-      <div class="mt-10">
-        <router-link to="/" class="text-blue-600 underline hover:text-blue-800"
-          >← Back to Home</router-link
+        <!-- Highlights -->
+        <ul
+          class="list-disc ml-6 text-gray-700 dark:text-gray-300 text-sm space-y-2"
         >
-      </div>
-    </div>
+          <li v-for="(point, index) in project.highlights" :key="index">
+            {{ point }}
+          </li>
+        </ul>
 
-    <div v-else>
-      <p class="text-red-500">Project not found.</p>
+        <!-- CTA -->
+        <div class="mt-10">
+          <router-link
+            to="/projects"
+            class="inline-block text-indigo-600 dark:text-indigo-400 hover:underline"
+          >
+            ← Back to Projects
+          </router-link>
+        </div>
+      </div>
+
+      <div v-else>
+        <p class="text-red-500 font-semibold">⚠️ Project not found.</p>
+      </div>
     </div>
   </section>
 </template>

@@ -1,13 +1,20 @@
 <template>
-  <section class="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950 py-20 px-6 text-gray-800 dark:text-white">
+  <section
+    class="min-h-screen py-20 px-6 text-gray-800 dark:text-white bg-gradient-to-br from-[#fde7da] via-[#dbeee7] to-[#fef6dc] dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-500"
+  >
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
-      
       <!-- Contact Info -->
       <div>
-        <h1 class="text-4xl font-bold mb-4">Let's Connect</h1>
-        <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-          Whether you're curious about my work, looking to collaborate, or just want to say hi —
-          I’d love to hear from you! ✨
+        <h1
+          class="text-4xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-400 dark:to-purple-400 drop-shadow-sm"
+        >
+          Let's Connect
+        </h1>
+        <p
+          class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed"
+        >
+          Whether you're curious about my work, looking to collaborate, or just
+          want to say hi — I’d love to hear from you! ✨
         </p>
 
         <ul class="space-y-6 text-base">
@@ -15,7 +22,11 @@
             <span class="text-2xl">📞</span>
             <div>
               <p class="font-semibold">Phone</p>
-              <a href="tel:081249342514" class="text-blue-600 dark:text-blue-400 hover:underline">0812-4934-2514</a>
+              <a
+                href="tel:081249342514"
+                class="text-blue-600 dark:text-blue-400 hover:underline"
+                >0812-4934-2514</a
+              >
             </div>
           </li>
 
@@ -23,7 +34,11 @@
             <span class="text-2xl">✉️</span>
             <div>
               <p class="font-semibold">Email</p>
-              <a href="mailto:lailatulrhma@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">lailatulrhma@gmail.com</a>
+              <a
+                href="mailto:lailatulrhma@gmail.com"
+                class="text-blue-600 dark:text-blue-400 hover:underline"
+                >lailatulrhma@gmail.com</a
+              >
             </div>
           </li>
 
@@ -45,7 +60,9 @@
             <span class="text-2xl">📍</span>
             <div>
               <p class="font-semibold">Address</p>
-              <p class="text-gray-700 dark:text-gray-300">Srengseng, West Jakarta</p>
+              <p class="text-gray-700 dark:text-gray-300">
+                Srengseng, West Jakarta
+              </p>
             </div>
           </li>
         </ul>
@@ -61,7 +78,9 @@
         /> -->
 
         <p class="font-semibold text-xl">Lailatul Rohma</p>
-        <p class="text-gray-500 dark:text-gray-400 text-sm mb-4">Frontend-Focused Fullstack Developer</p>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-4">
+          Frontend-Focused Fullstack Developer
+        </p>
 
         <div class="flex gap-4 justify-center mt-2">
           <a
