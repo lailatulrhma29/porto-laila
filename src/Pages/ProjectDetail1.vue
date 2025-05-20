@@ -1,5 +1,5 @@
 <template>
-  <section class="px-6 py-16 bg-white text-left max-w-5xl mx-auto space-y-16">
+  <section class="px-6 py-16  text-left max-w-5xl mx-auto space-y-16">
     <!-- Header -->
     <div>
       <h1 class="text-3xl font-bold mb-4">AQMS Dashboard Redesign</h1>

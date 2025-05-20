@@ -1,14 +1,32 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 export default {
-  content: ["./index.html", "./src/**/*.{vue,js,ts}"],
+  darkMode: 'class', // wajib class mode
+  content: [
+    './index.html',
+    './src/**/*.{vue,js,ts}',
+  ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Inter"', "sans-serif"], // override default sans
-        inter: ['"Inter"', "sans-serif"], // optional alias
-        grotesk: ['"Space Grotesk"', "sans-serif"],
+        inter: ['"Inter"', 'sans-serif'],
+        grotesk: ['"Space Grotesk"', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.outline-text': {
+          '-webkit-text-stroke': '1px black',
+          'color': 'transparent',
+          'font-weight': '700',
+        },
+        '.dark\\:outline-text': {
+          '-webkit-text-stroke': '1px white',
+          'color': 'transparent',
+          'font-weight': '700',
+        },
+      }, ['responsive', 'dark']);
+    },
+  ],
 };

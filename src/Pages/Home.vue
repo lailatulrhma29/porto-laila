@@ -1,21 +1,33 @@
 <template>
-  <section class="min-h-screen px-6 py-16 bg-white text-center">
+  <section class="min-h-screen px-6 py-16 text-center">
     <!-- Hero Section -->
     <div class="max-w-3xl mx-auto">
-      <h1 class="text-5xl md:text-6xl font-light leading-tight">
+      <h1
+        class="text-5xl md:text-6xl font-light leading-tight text-black dark:text-white"
+      >
         Hi, I'm
-        <span class="bg-yellow-200 px-2 font-bold text-black">Laila</span>
+        <span
+          class="bg-[#ffe3b3] dark:bg-[#facc15] px-2 font-bold text-black dark:text-gray-900"
+        >
+          Laila
+        </span>
       </h1>
 
-      <h2 class="mt-6 text-4xl md:text-5xl font-extrabold leading-tight">
-        <span class="text-black">I</span>
+     <h2 class="mt-6 text-4xl md:text-5xl font-extrabold leading-tight flex flex-wrap justify-center gap-2">
+  <span class="text-black dark:text-white">I</span>
 
-        <span class="text-transparent outline-text"> code, design, </span>
-        <span class="text-black">& </span>
-        <span class="text-transparent outline-text"> write </span>
-      </h2>
+  <span class="outline-text bg-transparent px-2">
+    CODE, DESIGN,
+  </span>
 
-      <p class="mt-6 text-gray-700 text-lg md:text-xl">
+  <span class="text-black dark:text-white">&</span>
+
+  <span class="outline-text bg-transparent px-2">
+    WRITE
+  </span>
+</h2>
+
+      <p class="mt-6 text-gray-700 dark:text-gray-300 text-lg md:text-xl">
         Fullstack Developer (frontend-focused) passionate about building clean,
         functional interfaces. Exploring UI/UX. Fast learner, problem solver,
         and tech & design enthusiast.
@@ -40,7 +52,9 @@
       >
         <!-- Text -->
         <div class="md:w-1/2 p-8 flex flex-col justify-center text-left">
-          <h3 class="text-2xl font-semibold group-hover:underline">
+          <h3
+            class="text-2xl font-semibold group-hover:underline text-gray-700"
+          >
             {{ project.title }}
           </h3>
           <p class="text-gray-700 mt-2">{{ project.subtitle }}</p>
@@ -141,7 +155,11 @@ function goToDetail(slug) {
 <style scoped>
 .outline-text {
   color: transparent;
-  -webkit-text-stroke: 1px black;
   font-weight: 700;
+  -webkit-text-stroke: 1px #000;
+}
+
+.dark .outline-text {
+  -webkit-text-stroke: 1px #fff;
 }
 </style>

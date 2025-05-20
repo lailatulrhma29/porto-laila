@@ -1,6 +1,14 @@
+/* src/index.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global dark mode styles */
+html.dark {
+  @apply bg-gray-900 text-white;
+}
+
 body {
-  @apply bg-white text-black font-sans;
+  @apply transition-colors duration-300;
 }
