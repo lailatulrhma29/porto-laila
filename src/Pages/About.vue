@@ -153,10 +153,10 @@
           class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-l-4 border-yellow-400"
         >
           <blockquote class="italic text-gray-800 dark:text-gray-300">
-            "Lailatul menunjukkan dedikasi luar biasa sebagai programmer. Ia
-            cepat belajar, mampu memahami kebutuhan bisnis, dan selalu
-            menyelesaikan tugas dengan tanggung jawab serta ketepatan waktu.
-            Etos kerja dan kemampuan teknisnya sangat bisa diandalkan."
+            “Lailatul demonstrates exceptional dedication as a programmer. She
+            learns quickly, understands business needs effectively, and
+            consistently completes tasks with responsibility and timeliness. Her
+            work ethic and technical skills are highly reliable.”
           </blockquote>
           <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
             — Ismi (Project Manager PT. Gema Cendikia Gemilang)
