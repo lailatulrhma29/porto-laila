@@ -1,32 +1,48 @@
 <template>
   <nav
-    class="fixed w-full top-0 z-50 backdrop-blur-md bg-white/60 dark:bg-gray-900/70 border-b border-gray-200 dark:border-gray-800 shadow-sm"
+    class="fixed w-full top-0 z-50 backdrop-blur-2xl bg-white/10 dark:bg-gray-900/30 border-b border-gray-200 dark:border-gray-800 shadow-sm"
   >
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap justify-between items-center">
+    <div
+      class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap justify-between items-center"
+    >
       <!-- Logo -->
-      <h1 class="text-xl font-grotesk font-semibold tracking-wider text-black dark:text-white">
+      <h1
+        class="text-xl font-grotesk font-semibold tracking-wider text-black dark:text-white"
+      >
         Lailatlrhma
       </h1>
 
       <!-- Navigation Links -->
       <ul class="flex flex-wrap gap-6 text-sm font-medium items-center">
         <li>
-          <router-link to="/" class="hover:underline text-black dark:text-white">
+          <router-link
+            to="/"
+            class="hover:underline text-black dark:text-white"
+          >
             Home
           </router-link>
         </li>
         <li>
-          <router-link to="/projects" class="hover:underline text-black dark:text-white">
+          <router-link
+            to="/projects"
+            class="hover:underline text-black dark:text-white"
+          >
             Projects
           </router-link>
         </li>
         <li>
-          <router-link to="/about" class="hover:underline text-black dark:text-white">
+          <router-link
+            to="/about"
+            class="hover:underline text-black dark:text-white"
+          >
             About
           </router-link>
         </li>
         <li>
-          <router-link to="/contact" class="hover:underline text-black dark:text-white">
+          <router-link
+            to="/contact"
+            class="hover:underline text-black dark:text-white"
+          >
             Contact
           </router-link>
         </li>
@@ -49,7 +65,7 @@
           ></div>
         </div>
         <span class="text-sm text-gray-700 dark:text-gray-300 hidden sm:inline">
-          {{ isDark ? 'Dark' : 'Light' }}
+          {{ isDark ? "Dark" : "Light" }}
         </span>
       </label>
     </div>
