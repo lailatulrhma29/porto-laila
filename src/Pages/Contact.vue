@@ -18,17 +18,6 @@
         </p>
 
         <ul class="space-y-6 text-base">
-          <li class="flex items-start gap-4">
-            <span class="text-2xl">📞</span>
-            <div>
-              <p class="font-semibold">Phone</p>
-              <a
-                href="tel:081249342514"
-                class="text-blue-600 dark:text-blue-400 hover:underline"
-                >0812-4934-2514</a
-              >
-            </div>
-          </li>
 
           <li class="flex items-start gap-4">
             <span class="text-2xl">✉️</span>
