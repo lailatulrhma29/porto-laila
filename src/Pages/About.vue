@@ -4,7 +4,7 @@
     <img
       :src="profilePic"
       alt="Lailatul Rohma"
-      class="w-45 h-45  mx-auto mb-6  object-cover"
+      class="w-45 h-45 mx-auto mb-6 object-cover"
     />
     <p class="text-lg mb-4">
       Hi! I’m <strong>Lailatul Rohma</strong> — a Fullstack Developer (mostly
@@ -96,16 +96,39 @@
     </ul>
 
     <!-- Testimonial -->
-    <h2 class="text-2xl font-semibold mt-10 mb-2">Testimonial</h2>
-    <blockquote class="border-l-4 border-yellow-300 pl-4 italic text-gray-700">
-      "Lailatul menunjukkan dedikasi luar biasa sebagai programmer. Ia cepat
-      belajar, mampu memahami kebutuhan bisnis, dan selalu menyelesaikan tugas
-      dengan tanggung jawab serta ketepatan waktu. Etos kerja dan kemampuan
-      teknisnya sangat bisa diandalkan."
-    </blockquote>
-    <p class="mt-2 text-sm text-gray-500">
-      — Ismi (Project Manager PT. Gema Cendikia Gemilang)
-    </p>
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Testimonial</h2>
+
+    <div class="mb-6">
+      <blockquote
+        class="border-l-4 border-yellow-300 pl-4 italic text-gray-700"
+      >
+        "Lailatul menunjukkan dedikasi luar biasa sebagai programmer. Ia cepat
+        belajar, mampu memahami kebutuhan bisnis, dan selalu menyelesaikan tugas
+        dengan tanggung jawab serta ketepatan waktu. Etos kerja dan kemampuan
+        teknisnya sangat bisa diandalkan."
+      </blockquote>
+      <p class="mt-2 text-sm text-gray-500">
+        — Ismi (Project Manager PT. Gema Cendikia Gemilang)
+      </p>
+    </div>
+
+    <div class="mb-6">
+      <blockquote
+        class="border-l-4 border-yellow-300 pl-4 italic text-gray-700"
+      >
+        "Laila is a hard worker—highly responsible, resilient, a great listener,
+        and without a doubt, someone intelligent and reliable to work with. Her
+        strategic thinking and contributions to various projects are proof of
+        her dependability and trustworthiness. She’s a joy to work with and be
+        around, always staying up-to-date with the latest trends and
+        technologies, making her a strong candidate for growth in a UI/UX design
+        career. Laila is both a great colleague and a friend, always open to
+        collaboration and innovation."
+      </blockquote>
+      <p class="mt-2 text-sm text-gray-500">
+        — Herda (UI/UX Designer PT. Gema Cendikia Gemilang)
+      </p>
+    </div>
   </section>
 </template>
 
