@@ -1,8 +1,9 @@
 <template>
   <div
-    class="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition"
+    class="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition relative overflow-hidden"
   >
-    <!-- Navbar passes toggle function -->
+    <div id="cursor" class="gradient-cursor"></div>
+
     <Navbar @toggle-theme="toggleDarkMode" />
 
     <router-view />
@@ -30,5 +31,29 @@ onMounted(() => {
     isDark.value = true;
     document.documentElement.classList.add("dark");
   }
+
+  const cursor = document.getElementById("cursor");
+  if (cursor) {
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = `${e.clientX}px`;
+      cursor.style.top = `${e.clientY}px`;
+    });
+  }
 });
 </script>
+
+<style scoped>
+.gradient-cursor {
+  position: fixed;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  background: linear-gradient(135deg, #6366f1, #ec4899);
+  mix-blend-mode: normal;
+  box-shadow: 0 0 10px rgba(236, 72, 153, 0.3);
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s ease;
+}
+</style>

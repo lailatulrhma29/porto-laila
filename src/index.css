@@ -11,4 +11,24 @@ html.dark {
 
 body {
   @apply transition-colors duration-300;
+  cursor: default; /* Atur default dulu */
+}
+
+/* Tangan saat hover elemen interaktif */
+a,
+button,
+.router-link-active,
+.router-link-exact-active {
+  cursor: pointer;
+}
+
+/* Hover di gambar atau card */
+img:hover,
+.card:hover {
+  cursor: zoom-in;
+}
+
+/* Kursor saat drag aktif (misal untuk slider atau carousel) */
+.dragging {
+  cursor: grabbing;
 }
