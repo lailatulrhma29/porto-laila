@@ -40,6 +40,15 @@
         </li>
         <li>
           <router-link
+            to="/hireme"
+            class="hover:underline text-black dark:text-white"
+          >
+            Hire Me
+          </router-link>
+        </li>
+        <li>
+          
+          <router-link
             to="/contact"
             class="hover:underline text-black dark:text-white"
           >
