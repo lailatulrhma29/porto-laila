@@ -93,6 +93,7 @@ import home from "@/assets/shopee/home.png";
 import landingpage from "@/assets/eduwork/landingpage.png";
 import adminhomescola1 from "@/assets/scola/adminhomescola1.jpg";
 import aqms2 from "@/assets/aqms2/aqms2.jpg";
+import js1 from "@/assets/javascaffolding/1.png";
 
 const allProjects = [
   {
@@ -107,6 +108,14 @@ const allProjects = [
     title: "School Management System",
     subtitle: "Full CRUD dashboard for system administrators.",
     image: adminhomescola1,
+    type: "coding",
+  },
+  {
+    slug: "javascaffolding",
+    title: "Website Java Scaffolding Kediri",
+    subtitle:
+      "Company profile site with product showcase and catalog features.",
+    image: js1,
     type: "coding",
   },
   {

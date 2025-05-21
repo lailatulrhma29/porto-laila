@@ -121,6 +121,11 @@ import SS2 from "@/assets/rentspace/SS2.png";
 import SS3 from "@/assets/rentspace/SS3.png";
 import adminhomescola1 from "@/assets/scola/adminhomescola1.jpg";
 import aqms2 from "@/assets/aqms2/aqms2.jpg";
+import JS1 from "@/assets/javascaffolding/1.png";
+import JS2 from "@/assets/javascaffolding/2.png";
+import JS3 from "@/assets/javascaffolding/3.png";
+import JS4 from "@/assets/javascaffolding/4.png";
+
 import { ref } from "vue";
 
 // active image index
@@ -171,6 +176,28 @@ const allProjects = [
       "🏫 Administrasi Sekolah: Perpustakaan, Kalender, Pembayaran, Berita, PPDB",
       "📝 Penilaian & Akademik: Ujian & E-Raport digital",
       "💬 Konseling: Prestasi dan pencatatan pelanggaran siswa",
+    ],
+  },
+  {
+    slug: "javascaffolding",
+    title: "Java Scaffolding Kediri",
+    subtitle:
+      "Company profile website with scaffold product catalog and inquiry features.",
+    images: [JS1, JS2, JS4, JS3],
+    imageCaptions: [
+      "Landing page showcasing company intro and service highlights",
+      "About section with company background and operational scope",
+      "Product catalog displaying scaffold types available for rent",
+      "Contact form and WhatsApp CTA for direct booking",
+    ],
+    description:
+      "A responsive company profile website for Java Scaffolding Kediri to promote their rental services, display available scaffolding types, and allow customers to reach out easily. Built for both desktop and mobile with clear navigation and direct communication in mind.",
+    tools: "Vue.js, Tailwind CSS",
+    highlights: [
+      "Branded homepage with strong call-to-action",
+      "Informative about section with company history",
+      "Dynamic product listing grid",
+      "Direct contact integration via WhatsApp",
     ],
   },
   {

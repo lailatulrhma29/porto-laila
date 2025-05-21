@@ -1,6 +1,6 @@
 <template>
   <section
-    class="min-h-screen px-6 py-20 flex justify-center bg-gradient-to-br from-[#fde7da] via-[#dbeee7] to-[#fef6dc] dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white transition-colors relative overflow-hidden"
+    class="min-h-screen px-6 py-20 pt-15 flex justify-center bg-gradient-to-br from-[#fde7da] via-[#dbeee7] to-[#fef6dc] dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white transition-colors relative overflow-hidden"
   >
     <!-- Decorative Gradient Overlay -->
     <div

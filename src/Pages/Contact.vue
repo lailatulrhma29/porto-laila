@@ -1,6 +1,6 @@
 <template>
   <section
-    class="min-h-screen py-20 px-6 text-gray-800 dark:text-white bg-gradient-to-br from-[#fde7da] via-[#dbeee7] to-[#fef6dc] dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-500"
+    class="min-h-screen py-20 px-6 pt-15 text-gray-800 dark:text-white bg-gradient-to-br from-[#fde7da] via-[#dbeee7] to-[#fef6dc] dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-500"
   >
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
       <!-- Contact Info -->

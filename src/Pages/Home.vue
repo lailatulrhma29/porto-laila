@@ -116,36 +116,36 @@ const projects = [
     slug: "scola",
     // bg: "bg-[#e4d9fb]",
   },
-  {
-    title: "Parcel Tracking UI",
-    subtitle: "Modern interface for tracking parcel deliveries.",
-    image: home,
-    slug: "admin-panel",
-    // bg: "bg-[#fff6e5]",
-  },
-  {
-    title: "Rent Space App",
-    subtitle:
-      "A web platform for browsing, booking, and managing shared workspaces.",
-    image: rentspace,
-    slug: "rent-space",
-    // bg: "bg-green-50",
-  },
-  {
-    slug: "aqms-wqms",
-    title: "AQMS & WQMS Dashboard UI",
-    subtitle:
-      "User interface for environmental monitoring in IoT applications.",
-    image: aqmswqmsDashboard,
-    // bg: "bg-blue-50",
-  },
-  {
-    title: "Eduwork",
-    subtitle: "Responsive, modern layout for product presentation.",
-    image: landingpage1,
-    slug: "landing-page",
-    // bg: "bg-[#e0f7ff]",
-  },
+  // {
+  //   title: "Parcel Tracking UI",
+  //   subtitle: "Modern interface for tracking parcel deliveries.",
+  //   image: home,
+  //   slug: "admin-panel",
+  //   // bg: "bg-[#fff6e5]",
+  // },
+  // {
+  //   title: "Rent Space App",
+  //   subtitle:
+  //     "A web platform for browsing, booking, and managing shared workspaces.",
+  //   image: rentspace,
+  //   slug: "rent-space",
+  //   // bg: "bg-green-50",
+  // },
+  // {
+  //   slug: "aqms-wqms",
+  //   title: "AQMS & WQMS Dashboard UI",
+  //   subtitle:
+  //     "User interface for environmental monitoring in IoT applications.",
+  //   image: aqmswqmsDashboard,
+  //   // bg: "bg-blue-50",
+  // },
+  // {
+  //   title: "Eduwork",
+  //   subtitle: "Responsive, modern layout for product presentation.",
+  //   image: landingpage1,
+  //   slug: "landing-page",
+  //   // bg: "bg-[#e0f7ff]",
+  // },
 ];
 
 function goToDetail(slug) {
