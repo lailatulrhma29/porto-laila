@@ -55,36 +55,54 @@
       </div>
     </div>
 
-    <!-- Project Blocks -->
-    <div class="space-y-10 mt-10">
-      <div
-        v-for="project in projects"
-        :key="project.title"
-        @click="goToDetail(project.slug)"
-        class="max-w-5xl mx-auto flex flex-col md:flex-row overflow-hidden rounded-xl backdrop-blur-md bg-white/60 dark:bg-white/10 shadow-lg hover:shadow-2xl transition-all duration-300 group"
-        :class="project.bg"
+   <!-- Project Blocks -->
+<div class="space-y-10 mt-10">
+  <div
+    v-for="project in projects"
+    :key="project.title"
+    @click="goToDetail(project.slug)"
+    class="relative max-w-5xl mx-auto flex flex-col md:flex-row overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-700 backdrop-blur-md bg-white/60 dark:bg-white/5 shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
+  >
+    <!-- Badge (top-left) -->
+    <div
+      class="absolute top-0 left-0 z-10 px-4 py-1 text-xs font-medium text-white bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-400 dark:to-purple-400 dark:bg-white/10 backdrop-blur-md rounded-br-2xl rounded-tl-2xl flex items-center gap-1"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-4 h-4"
+        fill="currentColor"
+        viewBox="0 0 24 24"
       >
-        <!-- Text -->
-        <div class="md:w-1/2 p-8 flex flex-col justify-center text-left">
-          <h3
-            class="text-2xl font-semibold group-hover:underline text-gray-700 dark:text-white"
-          >
-            {{ project.title }}
-          </h3>
-          <p class="text-gray-700 dark:text-gray-300 mt-2">
-            {{ project.subtitle }}
-          </p>
-        </div>
-        <!-- Image -->
-        <div class="md:w-1/2">
-          <img
-            :src="project.image"
-            :alt="project.title"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
+        <path
+          d="M12 2C8.686 2 6 4.686 6 8c0 4.97 6 12 6 12s6-7.03 6-12c0-3.314-2.686-6-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z"
+        />
+      </svg>
+      {{ project.type === 'coding' ? 'Coding Project' : 'Design Project' }}
     </div>
+
+    <!-- Text -->
+    <div class="md:w-1/2 p-8 flex flex-col justify-center text-left space-y-3">
+      <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+        {{ project.title }}
+      </h3>
+      <p class="text-gray-600 dark:text-gray-300">{{ project.subtitle }}</p>
+      <button
+        class="w-max bg-gradient-to-r from-yellow-300 to-yellow-400 hover:to-yellow-500 text-sm px-4 py-1.5 rounded-full font-medium text-black"
+      >
+        View Details
+      </button>
+    </div>
+
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img
+        :src="project.image"
+        :alt="project.title"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </div>
+  </div>
+</div>
   </section>
 </template>
 

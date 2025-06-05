@@ -23,61 +23,51 @@
 
       <!-- Section: With Coding -->
       <div class="mb-16">
-        <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">
-          💻 <span>Projects with Coding</span>
-        </h2>
+       
         <div class="grid md:grid-cols-2 gap-8">
           <router-link
-            v-for="project in codingProjects"
+            v-for="project in allProjects"
             :key="project.slug"
             :to="`/projects/${project.slug}`"
-            class="group border rounded-xl shadow hover:shadow-2xl transform hover:-translate-y-1 transition duration-300 overflow-hidden bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700"
+            class="relative group overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow hover:shadow-xl transition-all"
           >
-            <img
-              :src="project.image"
-              :alt="project.title"
-              class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
-            />
-            <div class="p-5">
-              <h3
-                class="text-lg font-semibold group-hover:underline text-gray-800 dark:text-white"
+            <!-- Custom corner badge -->
+            <div
+              class="absolute top-0 left-0 z-10 px-4 py-1 text-xs font-medium text-white bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-400 dark:to-purple-400 dark:bg-white/10 backdrop-blur-md rounded-br-2xl rounded-tl-2xl flex items-center gap-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4"
+                fill="currentColor"
+                viewBox="0 0 24 24"
               >
-                {{ project.title }}
-              </h3>
-              <p class="text-sm mt-2 text-gray-600 dark:text-gray-400">
-                {{ project.subtitle }}
-              </p>
+                <path
+                  d="M12 2C8.686 2 6 4.686 6 8c0 4.97 6 12 6 12s6-7.03 6-12c0-3.314-2.686-6-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z"
+                />
+              </svg>
+              {{
+                project.type === "coding" ? "Coding Project" : "Design Project"
+              }}
             </div>
-          </router-link>
-        </div>
-      </div>
 
-      <!-- Section: UI/UX Design Only -->
-      <div>
-        <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">
-          🎨 <span>Design-Only Projects</span>
-        </h2>
-        <div class="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-          <router-link
-            v-for="project in designProjects"
-            :key="project.slug"
-            :to="`/projects/${project.slug}`"
-            class="group border rounded-xl shadow hover:shadow-2xl transform hover:-translate-y-1 transition duration-300 overflow-hidden bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700"
-          >
+            <!-- Project Image -->
             <img
               :src="project.image"
               :alt="project.title"
-              class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+              class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
             />
+
+            <!-- Project Content -->
             <div class="p-5">
-              <h3
-                class="text-lg font-semibold group-hover:underline text-gray-800 dark:text-white"
-              >
-                {{ project.title }}
-              </h3>
-              <p class="text-sm mt-2 text-gray-600 dark:text-gray-400">
+              <h3 class="text-lg font-semibold">{{ project.title }}</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">
                 {{ project.subtitle }}
               </p>
+              <button
+                class="mt-4 bg-gradient-to-r from-yellow-300 to-yellow-400 hover:to-yellow-500 text-sm px-4 py-1.5 rounded-full font-medium text-black"
+              >
+                See More
+              </button>
             </div>
           </router-link>
         </div>

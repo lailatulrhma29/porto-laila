@@ -25,7 +25,7 @@
         <img
           :src="profilePic"
           alt="Lailatul Rohma"
-          class="w-45 h-45 object-cover dark:ring-yellow-400"
+          class="w-45 h-45 object-cover"
         />
       </div>
 
